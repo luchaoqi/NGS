@@ -1,2 +1,2 @@
 # RNA-seq
-My NGS jouney
+My NGS journey
