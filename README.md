@@ -5,7 +5,7 @@ Resources:
 Computational Genomics: Applied Comparative Genomics  
 ```https://github.com/schatzlab/appliedgenomics2019```  
 hw:  
-```https://github.com/LuchaoQi/hw/tree/master/applied_genomics```
+```https://github.com/LuchaoQi/hw/tree/master/applied_genomics```  
 pipeline tools:  
 ```http://education.knoweng.org/sequenceng/```  
 biotrainee:  
