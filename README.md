@@ -1,7 +1,6 @@
 # RNA-seq
 My NGS journey  
-
-Resources:  
+>Resources:  
 Computational Genomics: Applied Comparative Genomics  
 ```https://github.com/schatzlab/appliedgenomics2019```  
 hw:  
