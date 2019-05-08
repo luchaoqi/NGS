@@ -7,6 +7,6 @@ hw
 https://github.com/LuchaoQi/hw/tree/master/applied_genomics  
 pipeline tools  
 http://education.knoweng.org/sequenceng/  
-biotrainee  
+biotrainee project  
 https://www.youtube.com/watch?v=YA0L4R2_BlE&list=PLKOVv6BeGBMQ2bmWE2DRD2NYk5jPh-huJ&index=2  
 
