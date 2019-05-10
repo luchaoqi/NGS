@@ -1,5 +1,0 @@
-Module	Section	Sample Name	Source
-FastQC	all_sections	frag180.2	/home/leon/rna-seq/project/2_quality_control/sample_data/frag180.2_fastqc.zip
-FastQC	all_sections	frag180.1	/home/leon/rna-seq/project/2_quality_control/sample_data/frag180.1_fastqc.zip
-FastQC	all_sections	jump2k.2	/home/leon/rna-seq/project/2_quality_control/sample_data/jump2k.2_fastqc.zip
-FastQC	all_sections	jump2k.1	/home/leon/rna-seq/project/2_quality_control/sample_data/jump2k.1_fastqc.zip
