@@ -10,3 +10,4 @@ http://www.bio-info-trainee.com/2218.html
 *  bowtie2
 *  hisat2
 *  subjunc
+*  bwa
