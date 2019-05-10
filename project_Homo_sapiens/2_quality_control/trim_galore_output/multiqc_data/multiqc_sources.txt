@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+Cutadapt	all_sections	frag180.2	/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/frag180.2.fq_trimming_report.txt
+Cutadapt	all_sections	frag180.1	/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/frag180.1.fq_trimming_report.txt
+Cutadapt	all_sections	jump2k.2	/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/jump2k.2.fq_trimming_report.txt
+Cutadapt	all_sections	jump2k.1	/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/jump2k.1.fq_trimming_report.txt

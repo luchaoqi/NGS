@@ -1,0 +1,5 @@
+Sample	Cutadapt_mqc-generalstats-cutadapt-percent_trimmed
+frag180.1	70.5250873158
+frag180.2	90.5934917795
+jump2k.1	0.11213175268
+jump2k.2	1.11614964151

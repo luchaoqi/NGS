@@ -1,0 +1,73 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq
+Trimming mode: paired-end
+Trim Galore version: 0.6.1
+Cutadapt version: 2.3
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 3 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 35 bp
+
+
+This is cutadapt 2.3 with Python 3.7.1
+Command line parameters: -j 1 -e 0.1 -q 25 -O 3 -a AGATCGGAAGAGC /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq
+Processing reads on 1 core in single-end mode ...
+Finished in 1.99 s (28 us/read; 2.12 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  70,435
+Reads with adapters:                     1,017 (1.4%)
+Reads written (passing filters):        70,435 (100.0%)
+
+Total basepairs processed:     3,521,750 bp
+Quality-trimmed:                  35,606 bp (1.0%)
+Total written (filtered):      3,482,442 bp (98.9%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1017 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.1%
+  C: 25.9%
+  G: 21.9%
+  T: 24.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	761	1100.5	0	761
+4	189	275.1	0	189
+5	40	68.8	0	40
+6	7	17.2	0	7
+7	3	4.3	0	3
+9	2	0.3	0	1 1
+10	1	0.1	1	0 1
+11	3	0.0	1	0 3
+12	1	0.0	1	0 1
+13	1	0.0	1	0 1
+20	1	0.0	1	0 1
+26	1	0.0	1	0 1
+30	1	0.0	1	0 1
+32	1	0.0	1	0 1
+35	1	0.0	1	0 1
+36	1	0.0	1	0 1
+39	1	0.0	1	0 1
+48	2	0.0	1	0 2
+
+RUN STATISTICS FOR INPUT FILE: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq
+=============================================
+70435 sequences processed in total
+
+Total number of sequences analysed for the sequence pair length validation: 70435
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (35 bp): 666 (0.95%)

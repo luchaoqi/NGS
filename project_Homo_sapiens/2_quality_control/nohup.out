@@ -1,0 +1,338 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Output will be written into the directory: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.1.fq <<)
+
+Output will be written into the directory: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.1.fq <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	0	TGGAATTCTCGG	35217	0.00
+Nextera	0	CTGTCTCTTATA	35217	0.00
+Illumina	0	AGATCGGAAGAGC	35217	0.00
+Unable to auto-detect most prominent adapter from the first specified file (count smallRNA: 0, count Nextera: 0)
+Defaulting to Illumina universal adapter ( AGATCGGAAGAGC ). Specify -a SEQUENCE to avoid this behavior).
+
+Writing report to '/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/frag180.1.fq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.1.fq
+Trimming mode: paired-end
+Trim Galore version: 0.6.1
+Cutadapt version: 2.3
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 3 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 35 bp
+
+Writing final adapter and quality trimmed output to frag180.1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 25') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.1.fq <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	0	TGGAATTCTCGG	70435	0.00
+Nextera	0	CTGTCTCTTATA	70435	0.00
+Illumina	0	AGATCGGAAGAGC	70435	0.00
+Unable to auto-detect most prominent adapter from the first specified file (count smallRNA: 0, count Nextera: 0)
+Defaulting to Illumina universal adapter ( AGATCGGAAGAGC ). Specify -a SEQUENCE to avoid this behavior).
+
+Writing report to '/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/jump2k.1.fq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.1.fq
+Trimming mode: paired-end
+Trim Galore version: 0.6.1
+Cutadapt version: 2.3
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 3 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 35 bp
+
+Writing final adapter and quality trimmed output to jump2k.1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 25') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.1.fq <<< 
+This is cutadapt 2.3 with Python 3.7.1
+Command line parameters: -j 1 -e 0.1 -q 25 -O 3 -a AGATCGGAAGAGC /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.1.fq
+Processing reads on 1 core in single-end mode ...
+Finished in 0.94 s (27 us/read; 2.25 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,217
+Reads with adapters:                       468 (1.3%)
+Reads written (passing filters):        35,217 (100.0%)
+
+Total basepairs processed:     3,521,700 bp
+Quality-trimmed:               2,482,112 bp (70.5%)
+Total written (filtered):      1,038,018 bp (29.5%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 468 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 30.1%
+  C: 25.9%
+  G: 25.6%
+  T: 18.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	343	550.3	0	343
+4	98	137.6	0	98
+5	19	34.4	0	19
+6	6	8.6	0	6
+8	1	0.5	0	1
+10	1	0.0	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.1.fq
+=============================================
+35217 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/frag180.2.fq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.2.fq
+Trimming mode: paired-end
+Trim Galore version: 0.6.1
+Cutadapt version: 2.3
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 3 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 35 bp
+
+Writing final adapter and quality trimmed output to frag180.2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 25') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.2.fq <<< 
+This is cutadapt 2.3 with Python 3.7.1
+Command line parameters: -j 1 -e 0.1 -q 25 -O 3 -a AGATCGGAAGAGC /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.1.fq
+Processing reads on 1 core in single-end mode ...
+Finished in 1.61 s (23 us/read; 2.62 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  70,435
+Reads with adapters:                     1,070 (1.5%)
+Reads written (passing filters):        70,435 (100.0%)
+
+Total basepairs processed:     3,521,750 bp
+Quality-trimmed:                      44 bp (0.0%)
+Total written (filtered):      3,517,801 bp (99.9%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1070 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 30.2%
+  C: 26.3%
+  G: 22.3%
+  T: 21.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	799	1100.5	0	799
+4	188	275.1	0	188
+5	53	68.8	0	53
+6	14	17.2	0	14
+9	2	0.3	0	1 1
+10	2	0.1	1	0 2
+11	1	0.0	1	0 1
+15	1	0.0	1	0 1
+24	1	0.0	1	0 1
+25	2	0.0	1	0 2
+27	1	0.0	1	0 1
+37	3	0.0	1	0 3
+38	1	0.0	1	0 1
+46	1	0.0	1	0 1
+47	1	0.0	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.1.fq
+=============================================
+70435 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/jump2k.2.fq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq
+Trimming mode: paired-end
+Trim Galore version: 0.6.1
+Cutadapt version: 2.3
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 3 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 35 bp
+
+Writing final adapter and quality trimmed output to jump2k.2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 25') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq <<< 
+This is cutadapt 2.3 with Python 3.7.1
+Command line parameters: -j 1 -e 0.1 -q 25 -O 3 -a AGATCGGAAGAGC /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.2.fq
+Processing reads on 1 core in single-end mode ...
+Finished in 0.58 s (17 us/read; 3.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,217
+Reads with adapters:                       474 (1.3%)
+Reads written (passing filters):        35,217 (100.0%)
+
+Total basepairs processed:     3,521,700 bp
+Quality-trimmed:               3,188,882 bp (90.5%)
+Total written (filtered):        331,269 bp (9.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 474 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 31.9%
+  C: 29.7%
+  G: 17.3%
+  T: 19.4%
+  none/other: 1.7%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	366	550.3	0	366
+4	89	137.6	0	89
+5	19	34.4	0	19
+
+RUN STATISTICS FOR INPUT FILE: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/frag180.2.fq
+=============================================
+35217 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files frag180.1_trimmed.fq and frag180.2_trimmed.fq
+file_1: frag180.1_trimmed.fq, file_2: frag180.2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: frag180.1_trimmed.fq and frag180.2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to frag180.1_val_1.fq
+Writing validated paired-end read 2 reads to frag180.2_val_2.fq
+
+Total number of sequences analysed: 35217
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (35 bp): 35217 (100.00%)
+
+Deleting both intermediate output files frag180.1_trimmed.fq and frag180.2_trimmed.fq
+
+====================================================================================================
+
+This is cutadapt 2.3 with Python 3.7.1
+Command line parameters: -j 1 -e 0.1 -q 25 -O 3 -a AGATCGGAAGAGC /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq
+Processing reads on 1 core in single-end mode ...
+Finished in 1.99 s (28 us/read; 2.12 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  70,435
+Reads with adapters:                     1,017 (1.4%)
+Reads written (passing filters):        70,435 (100.0%)
+
+Total basepairs processed:     3,521,750 bp
+Quality-trimmed:                  35,606 bp (1.0%)
+Total written (filtered):      3,482,442 bp (98.9%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1017 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.1%
+  C: 25.9%
+  G: 21.9%
+  T: 24.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	761	1100.5	0	761
+4	189	275.1	0	189
+5	40	68.8	0	40
+6	7	17.2	0	7
+7	3	4.3	0	3
+9	2	0.3	0	1 1
+10	1	0.1	1	0 1
+11	3	0.0	1	0 3
+12	1	0.0	1	0 1
+13	1	0.0	1	0 1
+20	1	0.0	1	0 1
+26	1	0.0	1	0 1
+30	1	0.0	1	0 1
+32	1	0.0	1	0 1
+35	1	0.0	1	0 1
+36	1	0.0	1	0 1
+39	1	0.0	1	0 1
+48	2	0.0	1	0 2
+
+RUN STATISTICS FOR INPUT FILE: /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/sample_data/jump2k.2.fq
+=============================================
+70435 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files jump2k.1_trimmed.fq and jump2k.2_trimmed.fq
+file_1: jump2k.1_trimmed.fq, file_2: jump2k.2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: jump2k.1_trimmed.fq and jump2k.2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to jump2k.1_val_1.fq
+Writing validated paired-end read 2 reads to jump2k.2_val_2.fq
+
+Total number of sequences analysed: 70435
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (35 bp): 666 (0.95%)
+
+Deleting both intermediate output files jump2k.1_trimmed.fq and jump2k.2_trimmed.fq
+
+====================================================================================================
+
