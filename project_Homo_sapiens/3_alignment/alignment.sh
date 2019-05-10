@@ -19,4 +19,9 @@ hisat2 -p 10 -x ref -1 $fq1 -2 $fq2 -S temp.sam
 
 # subjunc
 # build index at first!
-subjunc -T 5 -i 
+subjunc -T 5 -i $index -r $fq1 -R $fq2 -o temp.sam
+
+# bwa
+bwa mem -t 5 -M $index $fq1 $fq2 > temp.sam
+
+

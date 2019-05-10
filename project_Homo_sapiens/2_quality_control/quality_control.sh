@@ -28,7 +28,7 @@ do
 	arr=($id)
 	fq1=${arr[0]}
 	fq2=${arr[1]}
-	nohup	trim_galore -q 25 --phred33 --length 35 -e 0.1 --stringency 3 --paired -o $outputdir $fq1 $fq2	&
+	nohup	trim_galore -q 25 --phred33 --length 30 -e 0.1 --stringency 3 --paired -o $outputdir $fq1 $fq2	&
 done
 
 cd $outputdir
