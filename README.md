@@ -9,3 +9,6 @@
 > * Genomic Data Science - JHU
 > * Bioconductor
 
+* Resources
+
+<https://vip.biotrainee.com/d/768->
