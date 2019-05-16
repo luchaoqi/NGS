@@ -1,5 +1,5 @@
 # RNA-seq
-My NGS journey  
+  
 *  Resources:  
 >Computational Genomics: Applied Comparative Genomics
 >
