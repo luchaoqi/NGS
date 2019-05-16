@@ -8,6 +8,7 @@ My NGS journey
 >https://github.com/LuchaoQi/hw/tree/master/applied_genomics 
 >
 >Havard: In-depth-NGS-Data-Analysis-Course
+>
 ><https://github.com/hbctraining/In-depth-NGS-Data-Analysis-Course>
 >
 >pipeline tools 
