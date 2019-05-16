@@ -3,11 +3,12 @@ My NGS journey
 *  Resources:  
 >Computational Genomics: Applied Comparative Genomics
 >
->https://github.com/schatzlab/appliedgenomics2019
->
 >https://github.com/schatzlab/appliedgenomics2019/tree/master/assignments/assignment4#question-2-small-variant-analysis-10-pts
 >
 >https://github.com/LuchaoQi/hw/tree/master/applied_genomics 
+>
+>Havard: In-depth-NGS-Data-Analysis-Course
+><https://github.com/hbctraining/In-depth-NGS-Data-Analysis-Course>
 >
 >pipeline tools 
 >
