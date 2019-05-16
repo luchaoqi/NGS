@@ -24,7 +24,7 @@ subjunc -T 5 -i $index -r $fq1 -R $fq2 -o temp.sam
 bwa mem -t 5 -M $index $fq1 $fq2 > temp.sam
 
 
-# batch processing after trimming QC
+# alignment after trimming QC
 ls *gz|cut -d"_" -f 1 |sort -u |while read id;do
 ls -lh ${id}_1_val_1.fq.gz   ${id}_2_val_2.fq.gz 
 hisat2 -p 10 -x /public/reference/index/hisat/hg38/genome -1 ${id}_1_val_1.fq.gz   -2 ${id}_2_val_2.fq.gz  -S ${id}.hisat.sam
