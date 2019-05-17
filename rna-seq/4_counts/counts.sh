@@ -16,4 +16,9 @@ source activate rna
 gtf="/public/reference/gtf/gencode/gencode.v25.annotation.gtf.gz"   
 featureCounts -T 5 -p -t exon -g gene_id  -a $gtf -o  all.id.txt  *.bam  1>counts.id.log 2>&1 &
 
+# https://blog.csdn.net/herokoking/article/details/78257714
+# samtools view SRR1039516.subjunc.bam chr1:2350414-2352820|wc
+less -SN all.id.txt
+
+
 multiqc all.id.txt.summary
