@@ -8,6 +8,11 @@
 # if no need to keep .gz as file extension use basename $id ".gz"
 ls /home/leon/rna-seq/project_Homo_sapiens/2_quality_control/trim_galore_output/*.fq| while read id; do ( cat $id|head -1000 > $(basename $id ));done
 
+
+
+
+
+
 # bowtie2
 
 bowtie2-build chr22.fa chr22
