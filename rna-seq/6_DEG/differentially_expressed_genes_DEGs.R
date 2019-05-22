@@ -1,6 +1,7 @@
 # Thanks to jimmy's help
 # multiple treat groups:
 # https://raw.githubusercontent.com/jmzeng1314/my-R/master/10-RNA-seq-3-groups/hisat2_mm10_htseq.R
+# https://github.com/jmzeng1314/GEO/blob/master/task4-NPC/step3-DEG.R
 # treat vs. untreat
 
 
@@ -77,8 +78,10 @@ if(F){
   
 }
 
+
+
 nrDEG = DEG
-DEGseq_DEG = nrDEG
+DEGseq_DEG = DEG
 
 # heatmap/volcano
 if(F){
@@ -224,3 +227,27 @@ if(T){
     dev.off()
   }
 }
+
+
+
+######################################################################
+##################      Futher investigation       ###################
+######################################################################
+
+# Compare all the results from DEseq2, edgeR and limma
+
+rm(list = ls())
+load(file = 'DEG_results.Rdata')
+
+
+a1 = data.frame(gene = rownames(DEG_limma_voom),
+                limma = DEG_limma_voom$logFC)
+
+a2 = data.frame(gene = rownames(DEGseq_DEG),
+                DEseq = DEGseq_DEG$log2FoldChange)
+
+a3 = data.frame(gene = rownames(edgeR_DEG),
+                edgeR = edgeR_DEG$logFC)
+
+
+
