@@ -2,6 +2,9 @@
 # multiple treat groups:
 # https://raw.githubusercontent.com/jmzeng1314/my-R/master/10-RNA-seq-3-groups/hisat2_mm10_htseq.R
 # https://github.com/jmzeng1314/GEO/blob/master/task4-NPC/step3-DEG.R
+
+
+
 # treat vs. untreat
 
 
@@ -32,6 +35,7 @@ load(file = 'airway_exprSet.Rdata')
 ######################################################################
 ###################      Firstly for DEseq2      #####################
 ######################################################################
+if(T){
 suppressMessages(library(DESeq2))
 colData = data.frame(row.names = colnames(exprSet),
                      group_list = group_list)
@@ -118,7 +122,7 @@ if(F){
   print(g)
   ggsave(g,filename = 'volcano.png')
 }
-
+}
 
 ######################################################################
 ###################      Then  for edgeR        #####################
@@ -128,6 +132,9 @@ if(T){
   
   library(edgeR)
   d <- DGEList(counts=exprSet,group=factor(group_list))
+  # This is an issue here: setting parameters to filter the total gene counts per sample
+  keep <- rowSums(cpm(d)>100) >= 2
+  d <- d[keep,]
   d$samples$lib.size <- colSums(d$counts)
   d <- calcNormFactors(d)
   d$samples
@@ -137,10 +144,11 @@ if(T){
   ## genes. The default method for computing these scale factors uses a trimmed mean of Mvalues
   ## (TMM) between each pair of samples
   
+if(F){
   png('edgeR_MDS.png')
   plotMDS(d, method="bcv", col=as.numeric(d$samples$group))
   dev.off()
-  
+}
   # The glm approach to multiple groups is similar to the classic approach, but permits more general comparisons to be made
   
   dge=d
@@ -153,7 +161,26 @@ if(T){
   dge <- estimateGLMTrendedDisp(dge, design)
   dge <- estimateGLMTagwiseDisp(dge, design)
   
-  fit <- glmFit(dge, design)
+  untrt.vs.trt = makeContrasts(contrasts=c('untrt-trt'),levels = design)
+  
+  #To perform quasi-likelihood F-tests:
+  fit <- glmQLFit(dge,design)
+  qlf <- glmQLFTest(fit,contrast=untrt.vs.trt)
+  # To perform likelihood ratio tests:
+  fit <- glmFit(dge,design)
+  lrt <- glmLRT(fit,contrast=untrt.vs.trt)
+
+  
+  nrDEG=topTags(lrt, n=nrow(exprSet))
+  nrDEG=as.data.frame(nrDEG)
+  head(nrDEG)
+  edgeR_lrt_DEG=nrDEG
+  
+  nrDEG=topTags(qlf, n=nrow(exprSet))
+  nrDEG=as.data.frame(nrDEG)
+  head(nrDEG)
+  edgeR_qlf_DEG=nrDEG
+  
   
   
   # > design
@@ -168,11 +195,7 @@ if(T){
   # SRR1039521   1     0
   
 
-  lrt <- glmLRT(fit,  contrast=c(1,0))
-  nrDEG=topTags(lrt, n=nrow(exprSet))
-  nrDEG=as.data.frame(nrDEG)
-  head(nrDEG)
-  edgeR_DEG = nrDEG
+  
   # write.csv(nrDEG,"DEG_treat_12_edgeR.csv",quote = F)
   # 
   # lrt <- glmLRT(fit, contrast=c(0,1) )
@@ -209,7 +232,7 @@ if(T){
   fit2=eBayes(fit2)
   tempOutput = topTable(fit2, coef='untrt-trt', n=Inf)
   DEG_limma_voom = na.omit(tempOutput)
-  save(DEG_limma_voom, DEGseq_DEG, edgeR_DEG, dds, exprSet, group_list, file = 'DEG_results.Rdata')
+  save(DEG_limma_voom, DEGseq_DEG, edgeR_lrt_DEG, edgeR_qlf_DEG, dds, exprSet, group_list, file = 'DEG_results.Rdata')
   
   if(F){
     write.csv(DEG_limma_voom,"DEG_limma_voom.csv",quote = F)
@@ -246,8 +269,8 @@ a1 = data.frame(gene = rownames(DEG_limma_voom),
 a2 = data.frame(gene = rownames(DEGseq_DEG),
                 DEseq = DEGseq_DEG$log2FoldChange)
 
-a3 = data.frame(gene = rownames(edgeR_DEG),
-                edgeR = edgeR_DEG$logFC)
+a3 = data.frame(gene = rownames(edgeR_lrt_DEG),
+                edgeR_lrt = edgeR_lrt_DEG$logFC)
 
 
 
