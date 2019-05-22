@@ -52,7 +52,8 @@ res <- results(dds,
 resOrdered <- res[order(res$padj),]
 head(resOrdered)
 DEG =as.data.frame(resOrdered)
-write.csv(DEG,"DEG.results.csv")
+
+write.csv(DEG,"DEseq2.results.csv")
 
 
 
@@ -272,5 +273,7 @@ a2 = data.frame(gene = rownames(DEGseq_DEG),
 a3 = data.frame(gene = rownames(edgeR_lrt_DEG),
                 edgeR_lrt = edgeR_lrt_DEG$logFC)
 
-
+# QL F-test is more strict
+a4 = data.frame(gene = rownames(edgeR_qlf_DEG),
+                egeR_qlf = edgeR_qlf_DEG$logFC)
 
