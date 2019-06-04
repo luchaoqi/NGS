@@ -3,6 +3,7 @@ rm(list=ls())
 load(file='GSE17708_raw_exprSet.Rdata')
 
 exprSet=raw_exprSet
+# lib the package based on the platform check step1 for further info
 library(hgu133plus2.db)
 ids=toTable(hgu133plus2SYMBOL)
 length(unique(ids$symbol))
