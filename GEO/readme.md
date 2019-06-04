@@ -1,4 +1,4 @@
-## Download
+## url: Data Downloading
 
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52778
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSExxxxx
 
