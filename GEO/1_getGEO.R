@@ -3,9 +3,7 @@
 # eSet[["GSE3325_series_matrix.txt.gz"]]@annotation
 # This is GPL570 platform
 
-# google it or find package here: http://www.bio-info-trainee.com/1399.html
-# https://github.com/jmzeng1314/my-R/blob/master/1-get-all-probeset-info/GPL_info.csv
-# then we use package library(hgu133plus2.db) in step2_id_filter
+
 
 rm(list=ls())
 if(F){
@@ -17,7 +15,6 @@ if(F){
 }
 load('GSE3325_eSet.Rdata')
 b = eSet[[1]]
-
 # raw_exprSet = eSet[["GSE3325_series_matrix.txt.gz"]]@assayData[["exprs"]]
 raw_exprSet=exprs(b) 
 phe=pData(b)
@@ -28,6 +25,10 @@ save(raw_exprSet,group_list,
 
 
 
+
+
+
+# 重点开始
 rm(list=ls())
 if(F){
   library(GEOquery)
