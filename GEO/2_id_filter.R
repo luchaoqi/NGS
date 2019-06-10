@@ -23,6 +23,7 @@ plot(table(sort(table(ids$symbol))))
 
 
 
+# *
 
 table(rownames(exprSet) %in% ids$probe_id)
 dim(exprSet)
@@ -51,7 +52,7 @@ new_exprSet <- jimmy(exprSet,ids)
 save(new_exprSet,group_list,
      file='GSE42872_new_exprSet.Rdata')
 
-
+rm(list = ls())
 load(file='GSE42872_new_exprSet.Rdata')
 exprSet=new_exprSet
 

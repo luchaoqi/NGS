@@ -1,3 +1,4 @@
+# method 1 
 downGSE <- function(studyID = "GSE1009", destdir = ".") {
   
   library(GEOquery)
