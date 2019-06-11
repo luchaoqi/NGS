@@ -30,7 +30,7 @@ contrast.matrix<-makeContrasts(paste0(unique(group_list),collapse = "-"),levels 
 contrast.matrix ##这个矩阵声明，我们要把progres.组跟stable进行差异分析比较
 
 
-
+# limma
 
 ##step1
 fit <- lmFit(exprSet,design)
