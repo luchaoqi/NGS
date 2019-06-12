@@ -2,7 +2,7 @@
 
 > Journey:
 >
-> * RNA-seq
+> * [RNA-seq](https://github.com/LuchaoQi/NGS/tree/master/rna-seq)
 > * GEO
 > * TCGA
 > * DNA-streaming
