@@ -7,6 +7,8 @@ exprSet=raw_exprSet
 
 # lib the package based on the platform check step1 for further info
 # eSet[["GSE17708_series_matrix.txt.gz"]]@annotation
+# Or
+# step 1: b$platform_id
 
 # google it or find package here: http://www.bio-info-trainee.com/1399.html
 # https://github.com/jmzeng1314/my-R/blob/master/1-get-all-probeset-info/GPL_info.csv
