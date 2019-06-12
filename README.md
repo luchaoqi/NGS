@@ -3,7 +3,7 @@
 > Journey:
 >
 > * [RNA-seq](https://github.com/LuchaoQi/NGS/tree/master/rna-seq)
-> * GEO
+> * [GEO](https://github.com/LuchaoQi/NGS/tree/master/GEO)
 > * TCGA
 > * DNA-streaming
 > * Genomic Data Science - JHU
