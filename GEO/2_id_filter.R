@@ -52,10 +52,10 @@ jimmy <- function(exprSet,ids){
 new_exprSet <- jimmy(exprSet,ids)
 
 save(new_exprSet,group_list,
-     file='GSE42872_new_exprSet.Rdata')
+     file='GSE17708_new_exprSet.Rdata')
 
 rm(list = ls())
-load(file='GSE42872_new_exprSet.Rdata')
+load(file='GSE17708_new_exprSet.Rdata')
 exprSet=new_exprSet
 
 # 看下一些常见基因的表达量是不是正常的(高于或者低于一般的表达量)
@@ -72,6 +72,7 @@ exprSet['ACTB',]
 ## raw_exprSet = eSet[["GSE3325_series_matrix.txt.gz"]]@assayData[["exprs"]]
 # raw_exprSet=exprs(b) 
 # phe=pData(b)
+# phe$title
 
 if(T){
   
