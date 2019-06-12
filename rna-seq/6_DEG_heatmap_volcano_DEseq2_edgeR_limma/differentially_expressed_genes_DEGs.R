@@ -89,9 +89,9 @@ nrDEG = DEG
 DEGseq_DEG = DEG
 
 # heatmap/volcano
-if(F){
+if(T){
   library(pheatmap)
-  choose_gene=head(rownames(nrDEG),50) ## 50 maybe better
+  choose_gene=head(rownames(nrDEG),50) ## 25 maybe better
   choose_matrix = exprSet[choose_gene,]
   choose_matrix=t(scale(t(choose_matrix)))
   pheatmap(choose_matrix,filename = 'DEG_top50_heatmap.png')
@@ -99,6 +99,8 @@ if(F){
   
   
   # volcano
+  # basically the following command:
+  # plot(nrDEG$logFC,-log10(nrDGE$P.Value))
   
   logFC_cutoff <- with(DEG,mean(abs( log2FoldChange)) + 2*sd(abs( log2FoldChange)) )
   # logFC_cutoff=1
