@@ -12,3 +12,5 @@
 * Resources  
 jimmy:  
 <https://vip.biotrainee.com/d/768->
+
+![](https://media.giphy.com/media/QYPvVL1CheVXO/giphy.gif)
