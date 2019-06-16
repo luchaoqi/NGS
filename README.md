@@ -11,6 +11,8 @@
 
 * Resources  
 jimmy:  
-<https://vip.biotrainee.com/d/768->
+<https://vip.biotrainee.com/d/768->  
+JHU:  
+<http://kasperdanielhansen.github.io/genbioconductor/>
 
 ![](https://media.giphy.com/media/QYPvVL1CheVXO/giphy.gif)
