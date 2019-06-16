@@ -38,6 +38,7 @@ if(F){
   save(eSet,file='GSE17708_eSet.Rdata')
 }
 load('GSE17708_eSet.Rdata')
+
 b = eSet[[1]]
 raw_exprSet=exprs(b) 
 raw_exprSet[1:4,1:4]
