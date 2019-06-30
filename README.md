@@ -5,7 +5,7 @@
 > * [RNA-seq](https://github.com/LuchaoQi/NGS/tree/master/rna-seq)
 > * [GEO_GSEA](https://github.com/LuchaoQi/NGS/tree/master/GEO_GSEA)
 > * TCGA
-> * my DNA-streaming
+> * My DNA-streaming
 
 
 
