@@ -10,27 +10,37 @@ This repo contains all scripts (Shell, R, Python) that can be used to perform on
 
 ## Resources
 
->Computational Genomics: Applied Comparative Genomics
+> 视频:
 >
->https://github.com/schatzlab/appliedgenomics2019/tree/master/assignments/assignment4#question-2-small-variant-analysis-10-pts
+> Jimmy:
 >
->https://github.com/LuchaoQi/hw/tree/master/applied_genomics 
+> https://www.youtube.com/watch?v=13wvmxsUA_8&list=PLKOVv6BeGBMQ2bmWE2DRD2NYk5jPh-huJ
 >
->Havard: In-depth-NGS-Data-Analysis-Course
+> 洲更:
 >
-><https://github.com/hbctraining/In-depth-NGS-Data-Analysis-Course>
+> https://space.bilibili.com/6447454
 >
->pipeline tools 
+> Computational Genomics: Applied Comparative Genomics
 >
->http://education.knoweng.org/sequenceng/ 
+> https://github.com/schatzlab/appliedgenomics2019/tree/master/assignments/assignment4#question-2-small-variant-analysis-10-pts
 >
->biotrainee project
+> https://github.com/LuchaoQi/hw/tree/master/applied_genomics 
 >
->https://www.youtube.com/watch?v=YA0L4R2_BlE&list=PLKOVv6BeGBMQ2bmWE2DRD2NYk5jPh-huJ&index=2
+> Havard: In-depth-NGS-Data-Analysis-Course
 >
->code ref
+> <https://github.com/hbctraining/In-depth-NGS-Data-Analysis-Course>
 >
-><https://www.jianshu.com/p/a84cd44bac67>
+> pipeline tools 
 >
-><http://www.bio-info-trainee.com/2218.html>
+> http://education.knoweng.org/sequenceng/ 
+>
+> biotrainee project
+>
+> https://www.youtube.com/watch?v=YA0L4R2_BlE&list=PLKOVv6BeGBMQ2bmWE2DRD2NYk5jPh-huJ&index=2
+>
+> code ref
+>
+> <https://www.jianshu.com/p/a84cd44bac67>
+>
+> <http://www.bio-info-trainee.com/2218.html>
 
