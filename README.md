@@ -11,9 +11,14 @@
 
 
 * Resources  
-jimmy:  
-<https://vip.biotrainee.com/d/768->  
-JHU:  
+  jimmy: 
+  <https://vip.biotrainee.com/d/768-> 
+
+  http://jm.grazy.cn/index/mulitcourse/detail.html?cid=53 
+
+  
+
+* JHU:  
 <http://kasperdanielhansen.github.io/genbioconductor/>
 
 ![](https://media.giphy.com/media/QYPvVL1CheVXO/giphy.gif)
