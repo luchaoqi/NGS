@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains all scripts (Shell, R, Python) that can be used to perform one-stop analysis - from downloading the raw gene data to investigating the differentially expressed gene matrix.
+This repo contains all tools (Shell script, R, Python) that can be used to perform one-stop analysis - from downloading the raw gene data to investigating the differentially expressed gene matrix.
 
 ![](<https://camo.githubusercontent.com/837b2e4f613524140ba5b02ce0523b9302b13290/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f6c32595778746537734a4232587545384d2f67697068792e676966>)
 
