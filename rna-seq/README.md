@@ -10,8 +10,7 @@ This repo contains all tools (Shell script, R, Python) that can be used to perfo
 
 ## Resources
 
-> 视频:
->
+
 > Jimmy:
 >
 > https://www.youtube.com/watch?v=13wvmxsUA_8&list=PLKOVv6BeGBMQ2bmWE2DRD2NYk5jPh-huJ
