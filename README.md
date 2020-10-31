@@ -13,6 +13,9 @@
 
 
 * Resources  
+  SequenceEnG:  
+  http://education.knoweng.org/sequenceng/  
+  
   jimmy: 
   <https://vip.biotrainee.com/d/768-> 
 
