@@ -17,7 +17,7 @@
   jimmy: 
   <https://vip.biotrainee.com/d/768-> 
 
-  http://jm.grazy.cn/index/mulitcourse/detail.html?cid=53 
+  http://jm.grazy.cn/index/mulitcourse/
 
   
 
